@@ -17,7 +17,7 @@ export function JobBoard() {
     <ul>
       {jobs.map(({id, first_name, last_name}) => {
         return (
-          <JobCard name={first_name} last_name={last_name}/>
+          <JobCard key={id} name={first_name} last_name={last_name}/>
         );
       })}
   </ul>
