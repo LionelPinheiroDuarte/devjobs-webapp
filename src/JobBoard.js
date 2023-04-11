@@ -1,7 +1,18 @@
 import useSWR from 'swr';
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+
 import { JobCard } from './JobCard';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
+
+const Post = () => {
+  const router = useRouter()
+  const { id } = router.query
+
+  return <p>offer: {id}</p>
+}
+
 
 export function JobBoard() {
 
@@ -15,9 +26,17 @@ export function JobBoard() {
 
   return (
     <ul>
-      {jobs.map(({id, first_name, last_name}) => {
+      {jobs.map(({id, company, contract, location, position}) => {
         return (
-          <JobCard key={id} name={first_name} last_name={last_name}/>
+          <>
+            <Link
+              href={{
+                pathname: '//',
+              }}
+            >
+            <JobCard key={id} company={company} contract={contract} location={location} postion={position} />
+          </Link>
+          </>
         );
       })}
   </ul>
