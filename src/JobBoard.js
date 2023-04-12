@@ -29,7 +29,7 @@ export function JobBoard() {
       {jobs.map(({id, company, contract, location, position}) => {
         return (
           <>
-            <Link href={`/offer/${company.split(" ").join("")}/${position.split(" ").join("")}`}>
+            <Link href={`/offer/${id}`}>
               <JobCard key={id} company={company} contract={contract} location={location} postion={position} />
             </Link>
           </>
