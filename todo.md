@@ -1,2 +1,6 @@
-- Import the real data
-- Create page/layouts based on data
+- Import images
+- Create basic styles
+- Create component OfferDescription
+- Create component loadmore
+- Create the searchBar component
+- Create the ligh/dark mode component
