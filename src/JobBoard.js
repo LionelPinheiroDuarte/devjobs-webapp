@@ -27,11 +27,11 @@ export function JobBoard() {
     <ul>
       {jobs.map(({id, company, contract, location, position}) => {
         return (
-          <>
+          <li key={id}>
             <Link href={`/offer/${id}`}>
-              <JobCard key={id} company={company} contract={contract} location={location} postion={position} />
+              <JobCard company={company} contract={contract} location={location} postion={position} />
             </Link>
-          </>
+          </li>
         );
       })}
   </ul>
