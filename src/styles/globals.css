@@ -38,6 +38,21 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  /* PRIMARY COLORS */
+
+  --primary-color: hsl(235, 69%, 61%);
+  --primary-color-light: hsl(235°, 82%, 77%);
+  --primary-dark: hsl(219°, 29%, 14%);
+  --primary-dark-lighter: hsl(220°, 29%, 10%);
+
+   /* SECONDARY COLORS */
+
+   --secondary-color-white: hsl(0°, 0%, 100%);
+   --secondary-color-light-gray: hsl(210°, 22%, 96%)  ;
+   --secondary-color-gray: hsl(212°, 23%, 69%);
+   --secondary-color-dark-gray: hsl(214°, 17%, 51%);
+
 }
 
 @media (prefers-color-scheme: dark) {
