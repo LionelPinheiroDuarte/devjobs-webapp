@@ -9,8 +9,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 const Post = () => {
   const router = useRouter()
   const { id } = router.query
-
-  return <p>offer: {id}</p>
+  return <p>{id}</p>
 }
 
 
