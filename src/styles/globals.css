@@ -94,6 +94,23 @@ button{
   border:none;
 }
 
+input{
+  font-family: inherit;
+  font-size: var(--fs-400);
+  color:var(--primary-dark);
+  height: 80px;
+  border: none;
+  border-radius: 5px;
+}
+
+input::placeholder{
+  color: var(--secondary-color-dark-gray);
+}
+
+input:focus{
+  outline: none;
+}
+
 /*--- Utility classes ---*/
 .primary-color { color: var(--primary-color);}
 .primary-color-light { color: var(--primary-color-light);} 
@@ -123,6 +140,16 @@ button{
   background-color: #C5C9F4 ;
 }
 
+.search-field{
+  display: flex;
+  padding-inline-start: 32px;
+  padding-block: 38px;
+}
+
+.search-field > img {
+  margin-top: 30px;
+  margin-right: 16px;
+}
 /* temp class*/
 
 .list-style{

@@ -1,3 +1,7 @@
+import Image from 'next/image';
+import searchIcon from "public\\assets\\desktop\\icon-search.svg";
+
+
 export default function test(){
     return(
         <>
@@ -20,6 +24,16 @@ export default function test(){
             </ol>
             <button className="primary-button">Button 1</button>
             <button className="secondary-button">Button 2</button>
+            <div className='search-field'>
+                <Image
+                    priority
+                    src={searchIcon}
+                    height={24}
+                    width={24}
+                    alt="search icon"
+                    />
+                <input type="text" id="name" name="name" size="20" placeholder="Enter your search"/>
+            </div>
         </>
     )
 }
