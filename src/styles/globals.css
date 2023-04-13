@@ -1,5 +1,18 @@
 :root {
   --max-width: 1100px;
+
+  /* Typo styles */
+
+  --fs-300: .875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+
+  --line-height:1.625rem;
+
   /* PRIMARY COLORS */
 
   --primary-color: hsl(235, 69%, 61%);
@@ -14,6 +27,84 @@
    --secondary-color-gray: hsl(212, 23%, 69%);
    --secondary-color-dark-gray: hsl(214, 17%, 51%);
 
+}
+
+/*--- Default CSS ---*/
+
+h1,h2,h3,h4{
+  font-style:var(--primary-dark);
+  font-weight: bold;
+}
+h1{
+  font-size: var(--fs-700);
+  line-height: 34px;
+}
+h2{
+  font-size: var(--fs-600);
+  line-height: 29px;
+}
+h3{
+  font-size: var(--fs-500);
+  line-height: 24px;
+}
+h4{
+  font-size: var(--fs-300);
+  line-height: 18px;
+}
+
+p{
+  font-size: var(--fs-400);
+  line-height: var(--line-height);
+}
+
+ul, ol {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--primary-color);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 33px;
+}
+
+ol {
+  counter-reset: num;
+}
+
+ol li {
+  counter-increment: num;
+}
+
+ol li::before {
+  content: counter(num);
+  font-weight: bold;
+  color:var(--primary-color);
+  margin-right: 33px;
+}
+
+
+
+/*--- Utility classes ---*/
+.primary-color { color: var(--primary-color);}
+.primary-color-light { color: var(--primary-color-light);} 
+.primary-dark { color: var(--primary-dark);}
+.primary-dark-lighter { color: var(--primary-dark-lighter);}
+
+.secondary-color-white { color: var(--secondary-color-white);}
+.secondar-color-light-gray { color:  var(--secondary-color-light-gray);}
+.secondary-color-gray { color: var(--secondary-color-gray);}
+.secondary-color-dark-gray { color: var(--secondary-color-dark-gray);}
+
+/* temp class*/
+
+.list-style{
+  margin-left: 2rem;
+}
+
+.list-item-style{
+  line-height: var(--line-height);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,9 +125,7 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-}
+body {}
 
 a {
   color: inherit;
