@@ -84,7 +84,15 @@ ol li::before {
   margin-right: 33px;
 }
 
-
+button{
+  font-family: inherit;
+  font-size: var(--fs-400);
+  font-weight: bold;
+  height: 48px;
+  width: 147px;
+  border-radius: 5px;
+  border:none;
+}
 
 /*--- Utility classes ---*/
 .primary-color { color: var(--primary-color);}
@@ -97,15 +105,30 @@ ol li::before {
 .secondary-color-gray { color: var(--secondary-color-gray);}
 .secondary-color-dark-gray { color: var(--secondary-color-dark-gray);}
 
+.list-item-style{line-height: var(--line-height);}
+
+.primary-button {
+  color: var(--secondary-color-white);
+  background-color: var(--primary-color)
+}
+.primary-button:hover{
+  background-color: var(--primary-color-light)  ;
+}
+.secondary-button {
+  color: var(--primary-color);
+  background-color: #EFF0FC ;
+}
+.secondary-button:hover {
+  color: var(--primary-color);
+  background-color: #C5C9F4 ;
+}
+
 /* temp class*/
 
 .list-style{
   margin-left: 2rem;
 }
 
-.list-item-style{
-  line-height: var(--line-height);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {

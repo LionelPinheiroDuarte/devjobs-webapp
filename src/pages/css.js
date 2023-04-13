@@ -18,6 +18,8 @@ export default function test(){
                 <li className="list-item-style secondary-color-dark-gray">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
                 <li className="list-item-style secondary-color-dark-gray">Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus.</li>
             </ol>
+            <button className="primary-button">Button 1</button>
+            <button className="secondary-button">Button 2</button>
         </>
     )
 }
