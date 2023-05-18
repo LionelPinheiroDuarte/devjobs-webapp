@@ -34,6 +34,10 @@ export default function test(){
                     />
                 <input type="text" id="name" name="name" size="20" placeholder="Enter your search"/>
             </div>
+            <div>
+                <input  type='checkbox'/>
+                {/* <input type='checkbox' checked/> */}
+            </div>
         </>
     )
 }
