@@ -36,7 +36,9 @@ export default function test(){
             </div>
             <div>
                 <input  type='checkbox'/>
-                {/* <input type='checkbox' checked/> */}
+            </div>
+            <div>
+                <button className="btn" onClick={toggleDarkMode}>click</button>
             </div>
         </>
     )
