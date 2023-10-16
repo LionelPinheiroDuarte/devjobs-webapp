@@ -19,6 +19,11 @@ const OrderedList = () => {
             </ol>
   )
 }
+const CheckBox = () => {
+  return (
+          <input  type='checkbox'/>
+  )
+}
 export default function test(){
     return(
         <>
@@ -43,9 +48,7 @@ export default function test(){
                     />
                 <input type="text" id="name" name="name" size="20" placeholder="Enter your search"/>
             </div>
-            <div>
-                <input  type='checkbox'/>
-            </div>
+            <CheckBox/>
             <div>
   //              <button className="btn" >click</button>
             </div>
