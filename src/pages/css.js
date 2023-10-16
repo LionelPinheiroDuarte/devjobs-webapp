@@ -1,5 +1,5 @@
 import Image from 'next/image';
-//import searchIcon from "~\\public\\assets\\desktop\\logo.svg";
+import searchIcon from "../../public/assets/desktop/icon-search.svg";
 
 const List = () => {
   return (
@@ -41,7 +41,7 @@ export default function test(){
             <div className='search-field'>
                 <Image
                     priority
- //                   src={searchIcon}
+                    src={searchIcon}
                     height={24}
                     width={24}
                     alt="search icon"
