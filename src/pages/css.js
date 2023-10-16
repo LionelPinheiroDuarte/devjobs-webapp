@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import searchIcon from "public\\assets\\desktop\\icon-search.svg";
-
+//import searchIcon from "~\\public\\assets\\desktop\\logo.svg";
 
 export default function test(){
     return(
@@ -27,7 +26,7 @@ export default function test(){
             <div className='search-field'>
                 <Image
                     priority
-                    src={searchIcon}
+ //                   src={searchIcon}
                     height={24}
                     width={24}
                     alt="search icon"
@@ -38,7 +37,7 @@ export default function test(){
                 <input  type='checkbox'/>
             </div>
             <div>
-                <button className="btn" onClick={toggleDarkMode}>click</button>
+  //              <button className="btn" >click</button>
             </div>
         </>
     )
